@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Invitation</title>
+</head>
+<body>
+    <div class="main-box">
+        <div id="init-qn">
+            <div class="question" id="question">
+                Will you be my valentine?
+            </div>
+            <div class="answers">
+                <div class="p-opt" id="noswap"><div class="opt" id="opt1" onclick="nextQuestion()">Yes</div></div>
+                <div class="p-opt" id="swap" onmouseover="move()"><div class="opt" id="opt2" onclick="end()">No</div></div>
+            </div>
+        </div>
+        <div id="final-qn" >
+            <div class="question fq" >
+                No more fun...
+                Now tell me the truth,
+                Do you Love me..?
+                Will you marry me?
+            </div>
+            <div class="answers">
+                <div class="p-opt"><div class="opt" id="f1" onclick="yes()">Yes, I love you</div></div>
+                <div class="p-opt"><div class="opt" id="f2" onclick="end()">No, Leave me alone</div></div>
+            </div>
+        </div>
+    </div>
+    <div id="yes" class="hide">I love you</div>
+    <div id="no" class="hide">I'm Sorry</div>
+    <script src="script.js"></script>
+
+</body>
+</html>
